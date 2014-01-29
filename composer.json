@@ -1,0 +1,26 @@
+{
+    "name": "zendframework/skeleton-application",
+    "description": "Skeleton Application for ZF2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "repositories" : [
+        {
+            "url" : "/vagrant/composer-dev/OAuth2",
+            "type" : "git"
+        },
+	{
+            "url" : "/vagrant/composer-dev/CoogleLib",
+            "type" : "git"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.2.*",
+        "coogle/cooglelib" : "dev-master",
+        "coogle/oauth2" : "dev-master"
+    }
+}
