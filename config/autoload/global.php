@@ -17,6 +17,17 @@ return array(
 		'dsn' => 'mysql:dbname=guestbook_demo;host=localhost',
 		'driver_options' => array(
 			\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
-		)
+		),
+		'username' => 'root',
+		'password' => 'password'
 	),
+	'oauth2' => array(
+		'auth' => array(
+			"auth_uri" => "https://accounts.google.com/o/oauth2/auth",
+			"token_uri" => "https://accounts.google.com/o/oauth2/token",
+			'scopes' => array(
+				'https://www.googleapis.com/auth/userinfo.profile'	
+			)
+		)	
+	)
 );
